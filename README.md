@@ -12,6 +12,15 @@ export class ArrayCsvPipe implements PipeTransform {
 ```
 
 ## Usage
+```typescript
+interface Genre {
+    id: string;
+    name: string;
+}
+...
+musicGenres = [{id: 'guid...', name: 'Pop'}, {id: 'guid...', name: 'Rock'}, {id: 'guid...', name: 'Blues'}];
+```
+
 ```html
 ...
 <span>{{ musicGenres | arrayCsv:'name' }}</span>
